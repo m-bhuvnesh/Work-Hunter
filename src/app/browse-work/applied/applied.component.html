@@ -1,0 +1,29 @@
+<!-- <p>applied works!</p> -->
+<div class="menu">
+    <app-menu></app-menu>
+</div>
+
+<div class="applied">
+
+    <table class="table">
+        <th>Title</th>
+        <th>Description</th>
+        <th>Duration</th>
+        <th>Role</th>
+        <th>Salary</th>
+
+        <tr *ngFor="let data of post_id">
+            <td>{{ data.post_title }}</td>
+            <td>
+                <pre>{{ data.post_description }}</pre>
+            </td>
+            <td>{{ data.post_time }}</td>
+            <td>{{ data.role }}</td>
+            <td>{{ data.salary |currency:'USD'}}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="footer">
+    <app-footer></app-footer>
+</div>

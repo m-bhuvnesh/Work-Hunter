@@ -1,0 +1,32 @@
+.col.md-6{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+.card{
+    margin-top: 20px;
+    height: 200px;
+    width: 100%;
+}
+.card-title{
+    text-align: center;
+    font-family: serif;
+    font-size: xx-large;
+    font-variant: common-ligatures;
+    margin-bottom: 15px;
+}
+.card-text{
+    text-align: center;
+    font-variant: contextual;
+    font-size: larger;
+    margin-bottom: 15px;
+}
+.card-text2{
+    font-family: emoji;
+    font-size: larger;
+    text-align:center;
+}
+iframe{
+    border: 0;
+    width: 80rem;
+}

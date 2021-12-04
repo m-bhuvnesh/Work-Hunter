@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .banner img {
+    width: 1263px;
+    height: 355px;
+    background: rgba(0, 0, 0, 0.04);
+    position: relative;
+  
+  }
+  
+  .banner h3 {
+    position: absolute;
+    margin-top: -225px;
+    font-family: ui-sans-serif;
+    font-size: xxx-large;
+    text-shadow: 1px 1px #000000 !important;
+    font-variant: common-ligatures;
+  }
+  
+  .col-md-12 {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .table {
+    border: 2px solid white;
+    box-shadow: 0 0 15px rgb(101 95 95 / 14%);
+  
+  }
+  
+  .table th {
+  
+    text-align: center;
+  
+  }
+  
+  .table td {
+    text-align: center;
+  }
+  
+  .table tr td a {
+    font-size: 20px;
+  }
+  #nav-side{
+      /* padding: 15px 0 15px 15px; */
+      width: 200px;
+      height: 50px;
+      padding: 10px;
+      font-family: 'Material Icons';
+      /* background-color: darkgreen; */
+  }
+  .nav{
+       padding: 15px 0 15px 15px;
+  }
+  .fa.fa-plus{
+      letter-spacing: 10px;
+  }
+  
+  #nav-side:hover{
+      background-color: rgba(0, 81, 255, 0.733);
+      /* color: rgb(241, 241, 62); */
+  }
+  /* .btn {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 3px;
+} */
+.waves-effect.waves-light{
+  background: #26ae61;
+  border: 2px solid #26ae61;
+  color: #ffffff ;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px 0 rgb(41 128 185 / 20%);
+  
+    min-width: 130px;
+    text-align: center;
+    border: 2px solid transparent;
+    margin: tpx auto;
+}
+.waves-effect.waves-light:hover{
+background: #e8eff5;
+  border: 2px solid #26ae61;
+  color:#26ae61 ;
+}
+.brand.animate__animated.animate__flash{
+  margin-left: 210px;
+  /* color: rgb(0, 0, 0); */
+  text-decoration: underline;
+  font-weight: bolder;
+  animation: logo 2s infinite;
+}
+
+/* nav{
+  position:fixed;
+} */
+.nav-wrapper {
+  margin-right: 35px;
+  /* position: fixed;   */
+}
+
+ul li.btn {
+  color: white;
+}

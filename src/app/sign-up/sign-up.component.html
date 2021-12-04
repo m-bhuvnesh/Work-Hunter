@@ -1,0 +1,62 @@
+<!-- <p>sign-up works!</p> -->
+
+<section class="signup">
+  <div class="container">
+    <div class="signup-content">
+      <div class="signup-form">
+        <h2 class="form-title">Sign up</h2>
+        <form [formGroup]='signupFrom'>
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="name" name="name" required id="name"
+              placeholder="Your Name" />
+
+
+          </div>
+          <div class="form-group">
+            <label for="email"><i class="zmdi zmdi-email"></i></label>
+            <input type="email" class="form-control" formControlName="email" name="email" required id="email"
+              placeholder="Your Email" />
+            <!-- <span *ngIf="signupFrom.get('name'.invalid)">This field is required</span> -->
+          </div>
+          <div class="form-group">
+            <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+            <input type="password" class="form-control" formControlName="password" name="pass" required id="pass"
+              placeholder="Password" />
+            <!-- <small *ngIf="password.error?.required">This field is required</small> -->
+          </div>
+          <div class="form-group">
+            <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+            <input type="password" class="form-control" formControlName="confirmpassword" name="re_pass" required id="repas"
+              placeholder="Repeat your password" />
+            <!-- <small *ngIf="repassword.error?.required">This field is required</small> -->
+          </div>
+          <!-- emp -->
+          <div class="form-group">
+            <label for="emp" class="lbl">Select Account Type:-</label>&nbsp;
+            <!-- <input type="checkbox" class="form-control" formControlName="employee" name="emp" required id="re_pass" />
+            <input type="checkbox" class="form-control" formControlName="freelancer" name="fl" required id="fl" /> -->
+            <input type="radio" formControlName="emp_role" name="emp_role" value="Employee" id="emp" /> Employee
+            <input type="radio" formControlName="emp_role" name="emp_role" value="Freelancer" id="fl" /> Freelancer
+            
+          </div>
+          <!-- fl -->
+          <!-- <div class="form-group">
+            <label for="fl"></label>
+            <input type="checkbox" class="form-control" formControlName="freelancer" name="fl" required id="fl" />
+          </div> -->
+          <div class="form-group form-button">
+            <button type="submit" class="form-submit" (click)='signup()' value="Register"
+              [disabled]='!signupFrom.valid'>
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="signup-image">
+        <figure>
+          <img src="assets/Image/signup.jpg" alt="sing up image" />
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>

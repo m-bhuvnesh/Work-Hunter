@@ -1,0 +1,110 @@
+<!-- <p>post-work works!</p> -->
+<div class="row-1">
+    <div class="header-img">
+        <!-- <h2 class="img-text">Work Hunter</h2> -->
+        <div class="img-text">
+            <span>W</span>
+            <span>O</span>
+            <span>R</span>
+            <span>K</span>
+            <span>H</span>
+            <span>U</span>
+            <span>N</span>
+            <span>T</span>
+            <span>E</span>
+            <span>R</span>
+        </div>
+        <div><img src="assets/Image/post-head.jpg"></div>
+    </div>
+    <div class="container">
+        <form style="width: 50%; margin-left: 25%" [formGroup]="postForm" (ngSubmit)="onSubmit()">
+            <div class="row-2">
+                <h4 for="fname">Choose a name for your project</h4>
+                <br />
+                <input type="text" formControlName="post_title" id="name" name=" name"
+                    placeholder="e.g.Build me a Website" required /><br />
+
+                <div *ngIf="!postForm.controls.name?.valid && (postForm.controls.name?.dirty
+    ||postForm.controls.name?.touched)" class="required">
+                    project name is required
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <h4>What role would you like to hire?</h4>
+                <br>
+                <input list="select-any" id="select-any-one" formControlName="role" name="role"
+                    placeholder="Select Any" />
+
+                <datalist id="select-any">
+                    <option value="Developer">
+                    <option value="Designers">
+                    <option value="Project Managers">
+                    <option value="Product Managers">
+                    <option value="Finance Experts">
+                </datalist>
+                <div *ngIf="!postForm.controls.select?.valid && (postForm.controls.select?.dirty
+                    ||postForm.controls.select?.touched)" class="required">
+                    pelese select one
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <h4>How long do you need the expert?</h4><br>
+                <input list="how-long" id="duritation" formControlName="post_time" name="time"
+                    placeholder="Select Any" />
+
+                <datalist id="how-long">
+                    <option value="1 to 4 weeks">
+                    <option value="1 to 3 months">
+                    <option value="3 to 6 months">
+                    <option value="Longer than 6 months">
+                    <option value="I will decide later">
+                </datalist>
+                <div *ngIf="!postForm.controls.duritation?.valid && (postForm.controls.duritation?.dirty
+                ||postForm.controls.duritation?.touched)" class="required">
+                    pelese select time duritation
+                </div>
+            </div>
+            <br>
+            <div class="row salary">
+                <span class="spn">Salary</span><br>
+                <!-- <input list="how-long" id="duritation" name="duritation" placeholder="Select Any" /> -->
+                <label class="usd">$USD</label>
+                <input type="number" formControlName="salary" placeholder="salary" class="form-control">
+
+
+            </div>
+
+
+
+            <div class="row">
+                <h4 for="describe">
+                    Tell us more about your project Start with a bit about yourself or your
+                    business, and include an overview of what you need done.
+                </h4>
+                <br />
+                <textarea _ngcontent-webapp-c156="" flcontrolvalueaccessor=""
+                    class="TextArea ng-pristine ng-invalid IsInvalid ng-touched" data-borderless="false"
+                    placeholder="Describe your project here..." rows="4" spellcheck="false"
+                    data-margin-bottom="xxxsmall" style="margin-top: 0px; margin-bottom: 4px; height: 225px;"
+                    formControlName="post_description" name="post_description"></textarea>
+                <div *ngIf="!postForm.controls.desc?.valid && (postForm.controls.desc?.dirty
+                    ||postForm.controls.desc?.touched)" class="required">
+                    pelese fill details about your project
+                </div>
+                <br /><br />
+                <!-- <input type="submit" class="btn btn-primary btn-sm" value="Submit" /> -->
+            </div>
+            <div class="photoUpload photoUpload-2">
+                Upload Files
+             <input type="file" formControlName="supportive_doc" (change)="selectfile($event)" name="supportive_doc" class="upload">  
+
+            </div>
+            <input type="submit"  class="btn btn-primary btn-sm" value="Submit"
+                [disabled]='!postForm.valid' />
+            <br>
+
+        </form>
+    </div>
+</div>

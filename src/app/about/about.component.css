@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.brand-logo {
+  font-family: 'Dancing Script', cursive;
+  margin-left: 35px;
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+  font-weight: bolder;
+  animation-name: logo;
+  animation-duration: 5s;
+
+
+}
+
+@keyframes logo {
+  0% {
+    color: #00acc1;
+    text-decoration: underline;
+  }
+
+  25% {
+    color: #4dd0e1;
+    text-decoration: underline;
+  }
+
+  50% {
+    color: #80deea;
+    text-decoration: underline;
+  }
+
+  75% {
+    color: #e0f7fa;
+    text-decoration: underline;
+  }
+
+  100% {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.nav-wrapper {
+  margin-right: 35px;
+  position: fixed;  
+}
+
+ul li.btn {
+  color: white;
+}
+
+.image-div img {
+  width: 1263px;
+  height: 450px;
+
+}
+
+.row {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.utf_grid_job_widget_area {
+
+
+  background-color: #fff;
+  padding: 60px 0 20px 0;
+  border: 1px solid #83a6ce;
+  box-shadow: 0 4px 10px 0 rgb(41 128 185 / 7%);
+  -webkit-box-shadow: 0 1px 10px 0 rgb(67 92 109 / 42%);
+  border-radius: 50px;
+  text-align: center;
+  overflow: hidden;
+  transition: .7s;
+  margin-bottom: 30px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.utf_grid_job_widget_area .avatar img {
+  padding: 4px;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+}
+
+.utf_grid_job_widget_area .u-content {
+  padding: 0 1.25rem 1.25rem;
+}
+
+.utf_grid_job_widget_area .avatar {
+  margin: 0 auto 2rem auto;
+  position: relative;
+  display: block;
+  max-width: 90px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  -webkit-box-shadow: inset 0 0px 15px rgb(0 0 0 / 3%);
+  box-shadow: inset 0 0px 15px rgb(0 0 0 / 3%);
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.u-content h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.utf_grid_job_widget_area .text-muted,
+.text-muted {
+  color: #8492af;
+  font-size: 13px;
+}
+
+.heading-sm {
+  text-align: center;
+  color: gray;
+  font-variant: common-ligatures;
+}
+
+.container {
+  padding: 35px;
+}
+
+.heading-main h2 {
+  text-align: center;
+  line-height: 2;
+  font-variant: petite-caps;
+}
+
+.peragraph {
+  white-space: pre-line;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 15px;
+}

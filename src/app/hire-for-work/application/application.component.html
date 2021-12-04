@@ -1,0 +1,24 @@
+<div class="menu">
+    <app-header-post></app-header-post>
+</div>
+
+ <div class="applied">
+
+    <table class="table">
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Email Id</th>
+        <th>Number</th>
+        <th>Resume</th>
+
+        <tr *ngFor="let d of uid" class="admin_tr">
+            <td class="admin_td">{{ d.fname }}</td>
+            <td class="admin_td">
+                <pre>{{ d.lname }}</pre>
+            </td>
+            <td class="admin_td">{{ d.email }}</td>
+            <td class="admin_td">{{ d.number }}</td>
+            <td class="admin_td">{{ d.file_url}}</td>
+        </tr>
+    </table>
+</div> 

@@ -1,0 +1,47 @@
+<div class="navbar">
+    <app-menu></app-menu>
+</div>
+
+
+<div class="banner">
+    <img src="assets/Image/selection-bg.jpg" style="background:rgba(0, 0, 0, 0.04)" alt="banner">
+    <h3 class="brand animate__animated animate__flash">Apply Now</h3>
+</div>
+
+
+<div class="col-md-12" *ngIf="post[0]">
+    <!-- <ul class="nav"><button type="button" routerLink="/post" id="nav-side" class="btn btn-primary btn-lg btn-block"><i
+                class="fa fa-plus" aria-hidden="true"></i>Post Job</button>
+    </ul> -->
+
+
+    <table class="table">
+        <th>Title</th>
+        <th>Description</th>
+        <th>Duration</th>
+        <th>Role</th>
+        <th>Salary</th>
+        <th>Supportive Documents</th>
+        <th> Action</th>
+
+        <tr *ngFor="let d of post">
+            <td>{{ d.post_title }}</td>
+            <td>
+                <pre>{{ d.post_description }}</pre>
+            </td>
+            <td>{{ d.post_time }}</td>
+            <td>{{ d.role }}</td>
+            <td>{{ d.salary |currency:'USD'}}</td>
+            <td><a >{{ d.supportive_doc }}</a></td>
+            <td><a class="waves-effect waves-light btn" (click)="apply(d.post_id)">Apply</a>
+            </td>
+           
+        </tr>
+
+    </table>
+</div>
+
+
+<div class="footer">
+    <app-footer></app-footer>
+</div>

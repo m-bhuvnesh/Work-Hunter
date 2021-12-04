@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.cyan.lighten-1 {
+  width: 1265px;
+  /* width: 100%; */
+}
+
+.brand-logo {
+  font-family: "Dancing Script", cursive;
+  margin-left: 35px;
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+  font-weight: bolder;
+  /* animation-name: logo;
+  animation-duration: 5s; */
+  animation: logo 2s infinite;
+}
+
+@keyframes logo {
+  0% {
+    color: #00acc1;
+    text-decoration: underline;
+  }
+
+  25% {
+    color: #4dd0e1;
+    text-decoration: underline;
+  }
+
+  50% {
+    color: #80deea;
+    text-decoration: underline;
+  }
+
+  75% {
+    color: #e0f7fa;
+    text-decoration: underline;
+  }
+
+  100% {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+/* nav{
+  position:fixed;
+} */
+.nav-wrapper {
+  margin-right: 35px;
+  /* position: fixed;   */
+}
+
+ul li.btn {
+  color: white;
+}
+
+.about {
+  background: none;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-variant: small-caps;
+}
+
+.contact {
+  background: none;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-variant: small-caps;
+}
+
+#btn {
+  color: white;
+  border-radius: 5px;
+  border: 0.2px dotted rgb(233, 233, 233);
+
+}
+
+#mobile-demo {
+  background-color: #26c6da;
+  color: white;
+}
+
+#mobile-demo a {
+  color: white;
+  text-decoration: none;
+
+}
+
+#mobile-demo a:hover {
+  color: yellow;
+}
+
+/* drop down */
+.dropdown-trigger {
+
+  font-size: 20px;
+}
+
+i.right {
+  margin-left: 0px;
+}
+
+.dropdown-trigger {
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  background: none;
+  color: white;
+}
+
+.dropdown-content li {
+  text-align: center;
+ 
+}
+ul #dropdown1{
+  top: -46px;
+  width: 125.729px !important;
+  left: 1090.27px !important;
+
+}
+

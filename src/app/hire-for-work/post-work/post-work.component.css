@@ -1,0 +1,222 @@
+.row-1 {
+  margin: 10px;
+}
+
+.header-img {
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.row-2 {
+  margin-left: -15px;
+}
+
+.header-img img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1240px;
+  height: 500px;
+
+
+
+}
+
+.container {
+  margin-top: -180px;
+  background-color: white;
+  position: relative;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+form {
+  /* background-color: honeydew; */
+  padding-top: 50px;
+}
+
+.img-text {
+  position: absolute;
+  /* color: #ffffffc7;
+    font-variant: petite-caps;
+    font-size: 60px; */
+  padding-left: 30%;
+  color: #ffffffc7;
+  font-size: 0;
+  line-height: 1.5;
+
+
+
+}
+
+.img-text span {
+  font-size: 5rem;
+  display: inline-block;
+  animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+
+  50% {
+    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+  }
+
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+
+.img-text span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.img-text span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.img-text span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.img-text span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.img-text span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.img-text span:nth-child(7) {
+  animation-delay: 3s;
+}
+
+.img-text span:nth-child(8) {
+  animation-delay: 3.5s;
+}
+
+.img-text span:nth-child(9) {
+  animation-delay: 4s;
+}
+
+.img-text span:nth-child(10) {
+  animation-delay: 4.5s;
+}
+
+
+
+.btn.btn-primary.btn-sm {
+  margin-top: 5px;
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  /* color: #000; */
+  /* background-color: #fff; */
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn-primary.btn-sm:hover {
+
+  background-color: #48aaef;
+  box-shadow: 0px 6px 10px rgb(194 184 184);
+  color: #fff;
+}
+
+/* #file {
+  color: blue;
+} */
+
+/* .photoUpload-2:hover {
+  background-color: #48aaef;
+  box-shadow: 0px 6px 10px rgb(194 184 184);
+  color: #fff;
+} */
+
+/* .photoUpload-2 {
+  cursor: pointer;
+  padding: 15px 20px 10px 20px;
+  text-transform: uppercase;
+  float: left;
+  margin-right: 31px;
+ 
+  margin-top: 5px;
+  width: 150px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  color: #fff;
+    background-color: #007bff;
+} */
+
+/* .photoUpload {
+  position: relative;
+  overflow: hidden;
+}
+
+.photoUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0;
+} */
+
+button,
+input {
+  overflow: visible;
+}
+.salary{
+  flex-wrap: nowrap;
+}
+.spn{
+  padding-right: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 10px
+}
+.usd{
+  margin-right: 15px;
+    font-size: medium;
+    margin-top: 15px;
+    margin-left: -5px;
+}
+.salary input{
+  width: 100px;
+  text-align:center;
+}
+.mid{
+  margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.required{
+  color: red;
+}
+input.ng-valid {
+  border-bottom: 1px solid green;
+
+  border-left: 5px solid green;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+input.ng-invalid.ng-touched {
+  border-bottom: 1px solid red;
+  border-left: 5px solid red;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}

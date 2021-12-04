@@ -1,0 +1,82 @@
+<div class="testbox">
+    <form>
+        <div class="banner">
+
+            <h1 class="h1">Apply For Work</h1>
+        </div>
+        <!-- <div  *ngFor="let d of post">
+            {{d.post_title}}
+        </div> -->
+        <p class="top-info">Thank you for your interest in working with us. Please check below for available job
+            opportunities that meet your criteria and send your application by filling out the Job Application Form.</p>
+        <div class="item">
+            <p>Name<span class="required">*</span></p>
+            <div class="name-item">
+                <input type="text" name="fname" placeholder="First" required [(ngModel)]="fname" />
+                <input type="text" name="lname" placeholder="Last" required [(ngModel)]="lname" />
+            </div>
+        </div>
+        <div class="contact-item">
+            <div class="item">
+                <p>Email<span class="required">*</span></p>
+                <input type="text" name="email" required [(ngModel)]="email" />
+            </div>
+            <div class="item">
+                <p>Phone<span class="required">*</span></p>
+                <input type="text" name="mobile" required [(ngModel)]="number" />
+            </div>
+        </div>
+        <div class="position-item">
+            <div class="item" >
+                <p>What position are you applying for?<span class="required">*</span></p>
+                <input type="text"  name="select" list="select" [(ngModel)]="position">
+                <datalist id="select" name="select" *ngFor="let d of post">
+                    <option>{{d.post_id}}</option>
+                    <!-- <option value="2">Job 2</option>
+                    <option value="3">Job 3</option>
+                    <option value="4">Job 4</option>
+                    <option value="5">Job 5</option> -->
+                </datalist>
+            </div>
+            <div class="item">
+                <p>Available start date<span class="required">*</span></p>
+                <input type="date" name="bdate" required [(ngModel)]="date" />
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+        </div>
+
+
+        <div class="question">
+            <p class="status-p">What is your current employment status?<span class="required">*</span></p>
+            <div class="question-answer">
+                <input list="status" id="status" name="posttime" placeholder="Select Any"
+                    [(ngModel)]="current_status" />
+                <datalist id="status">
+                    <option value="Student">Student</option>
+                    <option value="Fresher"> Fresher</option>
+                    <option value="Experience">Experience</option>
+                </datalist>
+            </div>
+
+            <div class="skill">
+                <p class="skill-p">Skills<span class="required">*</span></p>
+                <div class="name-item">
+                    <input type="text" class="skills" name="fname" placeholder="ex: Html. Css, JavaScript," required
+                        [(ngModel)]="skills" />
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="item">
+            <p>Submit your resume by providing your resume URL or attach file:</p>
+            <input type="text" name="providing" [(ngModel)]="file_url" required />
+            <input type="file" name="file" accept="file/*" [(ngModel)]="document" required>
+        </div>
+
+        <div class="btn-block">
+            <button type="submit" (click)="postdata()">Apply</button>
+        </div>
+    </form>
+</div>
